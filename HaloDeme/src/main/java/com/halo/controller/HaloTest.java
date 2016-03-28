@@ -1,5 +1,6 @@
 package com.halo.controller;
 
+import com.halo.base.BaseController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -9,14 +10,25 @@ import org.springframework.web.servlet.ModelAndView;
  */
 @Controller
 @RequestMapping(value="/halotest")
-public class HaloTest {
+public class HaloTest extends BaseController {
 
-    public ModelAndView info(){
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("halo","徐海然");
-        modelAndView.setViewName("main");
+    @RequestMapping
+    public ModelAndView info() throws Exception{
+        ModelAndView mv = this.getModelAndView();
+        mv.addObject("halo","徐海然");
+        mv.setViewName("main");
         System.out.println("测试测试测试提交");
-        return  modelAndView;
+        return  mv;
+    }
+
+    @RequestMapping(value="/json")
+    public ModelAndView jsonInfo() throws Exception{
+        ModelAndView mv = this.getModelAndView();
+        mv.addObject("halo","徐海然");
+        mv.setViewName("main");
+        System.out.println("测试测试测试提交");
+        out.
+        return  mv;
     }
 
 }
