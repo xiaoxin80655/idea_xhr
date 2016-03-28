@@ -15,6 +15,7 @@ public class HaloTest {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.addObject("halo","徐海然");
         modelAndView.setViewName("main");
+        System.out.println("测试测试测试提交");
         return  modelAndView;
     }
 
