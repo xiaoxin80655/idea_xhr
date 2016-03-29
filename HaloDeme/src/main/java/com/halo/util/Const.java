@@ -4,7 +4,7 @@ import org.springframework.context.ApplicationContext;
 
 /**
  * 项目名称：
- * @author:fh
+ * @author:halo
  * 
 */
 public class Const {

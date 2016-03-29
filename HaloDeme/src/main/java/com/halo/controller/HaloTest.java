@@ -27,7 +27,7 @@ public class HaloTest extends BaseController {
         mv.addObject("halo","徐海然");
         mv.setViewName("main");
         System.out.println("测试测试测试提交");
-        out.
+
         return  mv;
     }
 
